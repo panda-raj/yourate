@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YouRate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <video height="250" width="210" id="loader" autoplay>
+         <source src="images/Loader.mov" type="video/mp4">
+    </video>
+    <div class="header" id="header">
+      <span class="head_start">You</span><span class="head_end">Rate</span>
+    </div>
+    <div class="wrong-url" id="wrong-url">
+      <img src="images/wrong_url.png" height="142" width="160" alt="Comments Restricted Error">
+      <a href="https://www.youtube.com" target="blank">
+        <img src="images/YouTubeButton.png" height="51" width="160" alt="YouTube Button">
+      </a>
+    </div>
+    <div class="restricted-comments" id="restricted-comments">
+      <img src="images/restricted_comments.png" height="142" width="160" alt="Comments Restricted Error">
+      <a href="https://www.youtube.com" target="blank">
+        <img src="images/YouTubeButton.png" height="51" width="160" alt="YouTube Button">
+      </a>
+    </div>
+    <div class="score" id="score"><span class="divider">/5</span>
+    </div>
+    <table class="percentage-chart" id="chart">
+      <tr>
+        <td>Positive: </td>
+        <td>
+          <div class="positive" id="positive_bar">%</div>
+        </td>
+      </tr>
+      <tr>
+        <td>Negative: </td>
+        <td>
+          <div class="negative" id="negative_bar">%</div>
+        </td>
+      </tr>
+    </table>
+    <div class="comments" id="comments"> Comments Analyzed
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
